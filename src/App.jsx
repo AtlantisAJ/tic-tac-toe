@@ -5,18 +5,10 @@ import GameBoard from "./components/GameBoard.jsx";
 import Log from "./components/Log.jsx";
 import GameOver from "./components/GameOver.jsx";
 
-import {WINNING_COMBINATIONS} from "./winning-combinations.js";
+import {WINNING_COMBINATIONS} from "./constants/winning-combinations.js";
+import {INITIAL_GAME_BOARD} from "./constants/game-board.js";
+import {PLAYERS} from "./constants/players.js";
 
-const PLAYERS = {
-    X: 'Player 1',
-    O: 'Player 2',
-}
-
-const INITIAL_GAME_BOARD = [
-    [null, null, null],
-    [null, null, null],
-    [null, null, null]
-];
 
 function deriveActivePlayer(gameTurns) {
     let currentPlayer = 'X';
